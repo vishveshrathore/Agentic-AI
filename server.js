@@ -104,6 +104,8 @@ Do not add explanations or extra text.
   }
 });
 
-app.listen(3000, () => {
-  console.log("🚀 Agentic Email AI running at http://localhost:3000");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`🚀 Agentic Email AI running on port ${PORT}`);
 });
