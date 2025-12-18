@@ -1,20 +1,21 @@
 {
-  "name": "agentic-ai-email",
+  "name": "agentic-ai",
   "version": "1.0.0",
-  "description": "AI-powered email sender",
+  "description": "��#\u0000 \u0000A\u0000g\u0000e\u0000n\u0000t\u0000i\u0000c\u0000-\u0000A\u0000I\u0000\r\u0000 \u0000#\u0000 \u0000A\u0000g\u0000e\u0000n\u0000t\u0000i\u0000c\u0000-\u0000A\u0000I\u0000\r\u0000 \u0000#\u0000 \u0000A\u0000g\u0000e\u0000n\u0000t\u0000i\u0000c\u0000-\u0000A\u0000I\u0000\r\u0000 \u0000",
   "main": "server.js",
   "type": "module",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "engines": {
-    "node": ">=20.0.0"
-  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "nodemailer": "^6.9.5",
-    "openai": "^4.9.0"
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "nodemailer": "^7.0.11",
+    "openai": "^6.14.0"
   }
 }
