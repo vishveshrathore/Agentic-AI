@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Agentic AI Email Agent</title>
@@ -123,9 +124,17 @@
       min-height: 18px;
     }
 
-    .loading { color: var(--warning); }
-    .success { color: var(--success); }
-    .error { color: var(--error); }
+    .loading {
+      color: var(--warning);
+    }
+
+    .success {
+      color: var(--success);
+    }
+
+    .error {
+      color: var(--error);
+    }
 
     footer {
       margin-top: 16px;
@@ -154,6 +163,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="wrapper">
@@ -166,9 +176,7 @@
       </header>
 
       <div class="field">
-        <textarea
-          id="prompt"
-          placeholder="Example:
+        <textarea id="prompt" placeholder="Example:
 Send a formal email to hr@xyz.com requesting an interview for a Node.js developer role. My name is Vishvesh Rathore.">
         </textarea>
       </div>
@@ -200,7 +208,7 @@ Send a formal email to hr@xyz.com requesting an interview for a Node.js develope
       status.className = "status loading";
 
       try {
-        const response = await fetch("http://localhost:3000/agent/send-email", {
+        const response = await fetch("https://seal-app-w4ie7.ondigitalocean.app/agent/send-email", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ prompt })
@@ -224,4 +232,5 @@ Send a formal email to hr@xyz.com requesting an interview for a Node.js develope
   </script>
 
 </body>
+
 </html>
